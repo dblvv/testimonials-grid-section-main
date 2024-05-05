@@ -14,15 +14,67 @@
 }
 
 body {
+    background-color: var(--Light-grayish-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
 main {
+    margin: 80px;
+
     font-family: 'Barlow Semi Condensed';
     font-size: 13px;
+
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 20px;
+}
+
+main>div {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+main>div:first-child {
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-color: var(--Moderate-violet);
+
+    grid-column: span 2;
+}
+
+main>div:nth-child(2) {
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+main>div:nth-child(3) {
+    background-color: var(--White);
+}
+
+main>div:nth-child(4) {
+    background-color: var(--Very-dark-blackish-blue);
+    grid-column: span 2;
+}
+
+main>div:last-child {
+    background-color: var(--White);
+    grid-area: 1 / -2 / -1 / -1;
+}
+
+img {
+    border-radius: 100%;
+}
+
+main>div:first-child>img {
+    border: solid hsl(263, 55%, 60%);
+}
+main>div:nth-child(4)>img {
+    border: solid var(--Moderate-violet);
+
 }
 
 .attribution {
