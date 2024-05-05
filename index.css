@@ -15,6 +15,7 @@
 
 body {
     background-color: var(--Light-grayish-blue);
+    color: var(--White);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,10 +73,35 @@ img {
 main>div:first-child>img {
     border: solid hsl(263, 55%, 60%);
 }
+
 main>div:nth-child(4)>img {
     border: solid var(--Moderate-violet);
 
 }
+
+p {
+    opacity: 70%;
+    line-height: 1.6em;
+}
+
+h1 {
+    font-size: 1.6em;
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    opacity: 50%;
+    font-size: 1em;
+}
+
+.wbg {
+    color: var(--Very-dark-blackish-blue);
+}
+
 
 .attribution {
     font-size: 11px;
